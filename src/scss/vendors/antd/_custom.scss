@@ -1,0 +1,15 @@
+@import 'button';
+
+.ant-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ant-btn-sm {
+  padding: 0px 5px !important;
+}
+
+.ant-btn-loading {
+  cursor: wait !important;
+  pointer-events: auto !important;
+}

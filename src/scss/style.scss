@@ -1,0 +1,12 @@
+// Import styles
+@import '~@coreui/coreui/scss/coreui.scss';
+@import '~antd/dist/antd.css';
+
+// Overide
+@import 'vendors/antd/custom';
+@import 'vendors/coreui/custom';
+@import 'vendors/reactstrap/custome';
+
+// If you want to add something do it here
+@import 'polyfill';
+@import 'custom';

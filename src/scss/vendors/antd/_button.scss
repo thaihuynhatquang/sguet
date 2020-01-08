@@ -1,0 +1,108 @@
+.ant-btn-success {
+  color: #fff;
+  background-color: #00a65a;
+  border-color: #008d4c;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+}
+
+.ant-btn-success:hover,
+.ant-btn-success:focus {
+  color: #fff;
+  background-color: #008d4c;
+  border-color: #398439;
+}
+
+.ant-btn-success:active,
+.ant-btn-success.active {
+  color: #fff;
+  background-color: #008d4c;
+  border-color: #398439;
+}
+
+.ant-btn-info {
+  color: #fff;
+  background-color: #00c0ef;
+  border-color: #00acd6;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+}
+
+.ant-btn-info:hover,
+.ant-btn-info:focus {
+  color: #fff;
+  background-color: #00acd6;
+  border-color: #269abc;
+}
+
+.ant-btn-info:active,
+.ant-btn-info.active {
+  color: #fff;
+  background-color: #00acd6;
+  border-color: #269abc;
+}
+
+.ant-btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #e08e0b;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+}
+
+.ant-btn-warning:hover,
+.ant-btn-warning:focus {
+  color: #fff;
+  background-color: #e08e0b;
+  border-color: #d58512;
+}
+
+.ant-btn-warning:active,
+.ant-btn-warning.active {
+  color: #fff;
+  background-color: #e08e0b;
+  border-color: #d58512;
+}
+
+.ant-btn-success-outline {
+  background-color: #fff;
+  color: #00a65a;
+  border-color: #008d4c;
+}
+
+.ant-btn-success-outline:hover,
+.ant-btn-success-outline:focus {
+  background-color: #fff;
+  color: #008d4c;
+  border-color: #398439;
+}
+
+.ant-btn-success-outline:active,
+.ant-btn-success-outline.active {
+  background-color: #fff;
+  color: #008d4c;
+  border-color: #398439;
+}
+
+.ant-btn-primary-outline {
+  background-color: #fff;
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary-outline:hover,
+.ant-btn-primary-outline:focus {
+  background-color: #fff;
+  color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-btn-primary-outline:active,
+.ant-btn-primary-outline.active {
+  background-color: #fff;
+  color: #096dd9;
+  border-color: #096dd9;
+}
