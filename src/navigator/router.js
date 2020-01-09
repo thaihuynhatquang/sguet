@@ -1,19 +1,15 @@
 import React from 'react';
 
-const Dashboard = React.lazy(() => import('views/Dashboard'));
+const Home = React.lazy(() => import('views/Home'));
 const Colors = React.lazy(() => import('views/Theme/Colors'));
 const Icons = React.lazy(() => import('views/Theme/Icons'));
 
 export const router = {
   Home: {
-    path: '/',
+    path: '/home',
     exact: true,
     name: 'Home',
-  },
-  Dashboard: {
-    path: '/dashboard',
-    name: 'Dashboard',
-    render: Dashboard,
+    render: Home,
   },
   Colors: {
     path: '/theme/colors',

@@ -2,3 +2,35 @@
 .line-buttons > a:not(:last-child) {
   margin-right: 0.5rem;
 }
+
+.vertical-center {
+  margin-top: calc(
+    (100vh 
+    - (55px + 50px) /* header + footer */ 
+    - 165px /* container */ 
+    - (170px + 20px) /* sg-header */) / 2 
+    
+  );
+}
+
+.no-boder-radius {
+  border-radius: 0 !important;
+}
+
+.sg-header > div {
+  margin: calc((170px - 97px) / 2) 0;
+}
+.sg-header {
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
