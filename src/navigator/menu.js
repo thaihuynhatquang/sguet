@@ -3,9 +3,9 @@ import { router } from 'navigator/router';
 export default {
   items: [
     {
-      name: router.Dashboard.name,
-      url: router.Dashboard.path,
-      icon: 'cui-speedometer',
+      name: router.Home.name,
+      url: router.Home.path,
+      icon: 'icon-home',
     },
   ],
 };

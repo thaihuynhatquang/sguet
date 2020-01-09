@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { AppHeader, AppBreadcrumb, AppSidebar, AppFooter } from '@coreui/react';
+import { AppHeader, AppSidebar, AppFooter } from '@coreui/react';
 import { Container } from 'reactstrap';
 import navigator from 'navigator';
 import DefaultHeader from './DefaultHeader';
@@ -20,8 +20,8 @@ class DefaultLayout extends React.Component {
             <DefaultSidebar />
           </AppSidebar>
           <main className='main'>
-            <div className='header-divider' />
-            <AppBreadcrumb appRoutes={navigator.routes} />
+            {/* <div className='header-divider' />
+            <AppBreadcrumb appRoutes={navigator.routes} /> */}
             <Container fluid>
               <Suspense fallback={<DefaultLoading />}>
                 <Switch>
@@ -41,7 +41,7 @@ class DefaultLayout extends React.Component {
                         />
                       );
                     })}
-                  <Redirect from='/' to='/dashboard' />
+                  <Redirect from='/' to='/home' />
                 </Switch>
               </Suspense>
             </Container>

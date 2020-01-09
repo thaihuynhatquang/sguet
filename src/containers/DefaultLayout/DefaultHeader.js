@@ -8,27 +8,32 @@ import sygnet from 'assets/img/brand/sygnet.png';
 import { router } from 'navigator/router';
 
 class DefaultHeader extends Component {
-  handleClickLogout = () => {};
+  handleClickLogout = () => { };
 
   render() {
     return (
       <Fragment>
+        <AppSidebarToggler className="d-sm-none" mobile>
+          <i className='nav-link icon-menu' />
+        </AppSidebarToggler>
         <AppNavbarBrand
-          className='d-md-down-none'
           full={{ src: logo, width: 90, height: 35, alt: 'CoreUI Logo' }}
           minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
         />
-        <AppSidebarToggler />
-        <Nav className='mx-auto text-center' display='lg' pills>
-          <NavItem className='px-3'>
-            <NavLink to='#' className='nav-link d-md-down-none'>
+        <AppSidebarToggler className='d-none d-lg-block' display='lg'>
+          <i className='nav-link icon-menu' />
+        </AppSidebarToggler>
+
+        <Nav className='mx-auto text-center' pills >
+          <NavItem className='px-3 d-none d-sm-block'>
+            <NavLink to={router.Home.path} title={router.Home.name} className='nav-link d-md-down-none'>
               Trang chủ
             </NavLink>
             <NavLink to='#' className='nav-link d-lg-none'>
               <i className='icon-home' />
             </NavLink>
           </NavItem>
-          <NavItem className='px-3'>
+          <NavItem className='px-3 d-none d-sm-block'>
             <NavLink to={router.Colors.path} title={router.Colors.name} className='nav-link d-md-down-none'>
               Tin tức - Hoạt động
             </NavLink>
@@ -36,7 +41,7 @@ class DefaultHeader extends Component {
               <i className='cui-rss' />
             </NavLink>
           </NavItem>
-          <NavItem className='px-3'>
+          <NavItem className='px-3 d-none d-sm-block'>
             <NavLink to={router.Icons.path} title={router.Icons.name} className='nav-link d-md-down-none'>
               Danh bạ
             </NavLink>
@@ -44,7 +49,7 @@ class DefaultHeader extends Component {
               <i className='icon-people' />
             </NavLink>
           </NavItem>
-          <NavItem className='px-3'>
+          <NavItem className='px-3 d-none d-sm-block'>
             <NavLink to={router.Colors.path} title={router.Colors.name} className='nav-link d-md-down-none'>
               Giới thiệu
             </NavLink>
@@ -52,7 +57,7 @@ class DefaultHeader extends Component {
               <i className='icon-info' />
             </NavLink>
           </NavItem>
-          <NavItem className='px-3'>
+          <NavItem className='px-3 d-none d-sm-block'>
             <NavLink to={router.Icons.path} title={router.Icons.name} className='nav-link d-md-down-none'>
               Liên hệ
             </NavLink>
@@ -60,7 +65,7 @@ class DefaultHeader extends Component {
               <i className='icon-phone' />
             </NavLink>
           </NavItem>
-          <NavItem className='px-3'>
+          <NavItem className='px-3 d-none d-sm-block'>
             <NavLink to={router.Colors.path} title={router.Colors.name} className='nav-link d-md-down-none'>
               Link
             </NavLink>
@@ -69,7 +74,7 @@ class DefaultHeader extends Component {
             </NavLink>
           </NavItem>
         </Nav>
-        <Nav className='ml-auto mr-4' navbar>
+        <Nav navbar>
           <AppHeaderDropdown direction='down'>
             <DropdownToggle nav>
               <Avatar>Admin</Avatar>
